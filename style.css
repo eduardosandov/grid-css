@@ -98,6 +98,21 @@ body {
       background: white;
   }
 
-  @media  screen and () {
-      
+  @media  screen and (max-width: 768px) {
+      .body {
+          background: tomato;
+
+      }
+      .header {
+          text-align: center;
+      }
+      .container .content {
+          grid-column: 1/-1;
+      }
+      .container .sidebar {
+          grid-column: 1/-1;
+      }
+      .container .related-post {
+          grid-column: 1/-1;
+      }
   }
