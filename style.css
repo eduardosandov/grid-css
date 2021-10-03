@@ -34,3 +34,70 @@ body {
       gap: 1.6em;
       grid-template-columns: repeat(5 ,1fr);
   }
+
+  .container > .header,
+  .container > .content,
+  .container > .sidebar,
+  .container > .footer,
+  .container > div {
+      background: white;
+      padding: 20px;
+      border: 1px solid black;
+  }
+
+  .container .header,
+  .container .footer {
+      grid-column: 1/6;
+      background: blueviolet;
+      color: white;
+  }
+
+  .container > .content {
+      grid-column: span 3;
+  }
+
+  .content > .article {
+      background: rgb(192, 192, 182);
+      padding: 20px;
+      margin-top: 5px;
+      color: white;
+  }
+
+  .content .article h1,
+  .content .article p {
+      padding: 10px;
+  }
+
+  .container > .sidebar {
+      grid-column: span 2;
+      background: yellowgreen;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .container > .sidebar img {
+      width: 100%;
+      margin-top: 5px;
+  }
+  .container > .related-post {
+      background:chocolate;
+      color: white;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+      border-radius: 10px;
+  }
+  .container > .related-post:hover {
+      cursor: pointer;
+      color: teal;
+      background: white;
+  }
+
+  @media  screen and () {
+      
+  }
